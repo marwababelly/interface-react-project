@@ -1,0 +1,15 @@
+.nav {
+    background-color: #2196f3;
+    padding: 1px 25px;
+    /* background-color: #2196f3; */
+  color: white;
+  /* padding: 16px 32px; */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text {
+    color: #eee;
+    font-size: 24px;
+    font-weight: bold;
+}

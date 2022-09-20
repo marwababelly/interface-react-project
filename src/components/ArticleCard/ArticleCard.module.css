@@ -1,0 +1,38 @@
+.article {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.article img {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.article .title {
+  font-size: 32px;
+}
+
+.article .body {
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@supports (-webkit-line-clamp: 3) {
+  .article .body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
